@@ -3,6 +3,10 @@ on:
   workflow_dispatch:
 
 jobs:
+  identity:
+    permissions:
+      id-token: write
+      
   test:
     runs-on: ubuntu-latest
     steps:
