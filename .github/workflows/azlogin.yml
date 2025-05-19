@@ -1,13 +1,12 @@
 name: Python workflow
+
 on: 
   workflow_dispatch:
 
 jobs:
-  identity:
+  test:
     permissions:
       id-token: write
-      
-  test:
     runs-on: ubuntu-latest
     steps:
     - name: Azure login
